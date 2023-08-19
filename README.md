@@ -36,3 +36,9 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 # set
 
 node -v 18.16.1
+
+# Commit
+
+Feature: 기능 추가
+Fix: 오류 수정
+Set: 설정 수정
