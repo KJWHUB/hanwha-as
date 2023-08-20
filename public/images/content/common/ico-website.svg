@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+    <g data-name="그룹 246">
+        <g data-name="타원 5" style="stroke:#fff;stroke-width:1.6px;fill:none" transform="translate(1 1)">
+            <circle cx="9" cy="9" r="9" style="stroke:none"/>
+            <circle cx="9" cy="9" r="8.2" style="fill:none"/>
+        </g>
+        <g data-name="그룹 179">
+            <g data-name="타원 6" transform="translate(5.5 1)" style="stroke:#fff;stroke-width:1.6px;fill:none">
+                <ellipse cx="4.5" cy="9" rx="4.5" ry="9" style="stroke:none"/>
+                <ellipse cx="4.5" cy="9" rx="3.7" ry="8.2" style="fill:none"/>
+            </g>
+            <path data-name="선 2" d="M0 0h16.708" transform="translate(1.646 10.001)" style="stroke:#fff;stroke-width:1.6px;fill:none"/>
+        </g>
+    </g>
+</svg>
