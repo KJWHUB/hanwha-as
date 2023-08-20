@@ -1,0 +1,17 @@
+.mainHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background-color: aqua;
+
+  width: 100%;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  padding-top: calc(1.3vw + 15px);
+  padding-bottom: calc(1.3vw + 15px);
+  height: calc(40px + (calc(1.3vw + 15px) * 2) + 1px);
+  box-sizing: border-box;
+  border-bottom: 1px solid rgba(0, 0, 0, 0);
+  transition: all 0.3s;
+}
