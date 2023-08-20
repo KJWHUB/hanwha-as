@@ -1,4 +1,4 @@
-export const Lang = {
-  KO: "KO",
-  US: "US"
-};
+export enum Lang {
+  KOR,
+  ENG
+}
