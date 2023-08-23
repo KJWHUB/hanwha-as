@@ -9,21 +9,23 @@ export default async function MainHeader() {
   const response = await menuApi.getMenuList();
 
   return (
-    <header className={`${header.header} menu__hamburger`}>
+    <header className={header.header}>
       <Link href="/">
         <img src="/images/content/common/d-logo.svg" alt="" />
       </Link>
-      <nav className="main-menu">
+      <nav className={header.mainMenuWrap}>
         {response.map((el: MainMenuType) => {
           return (
-            <Link href={el.path} key={el.id}>
-              {el.text}
-            </Link>
+            <div className={`${header.depth0} btn3-en`}>
+              <Link href={el.path} key={el.id} className={header.linkHeaderWhite}>
+                {el.text}
+              </Link>
+            </div>
           );
         })}
       </nav>
 
-      <ul className="icon-wrap">
+      <ul className={header.iconWrap}>
         <li>
           <img src="/images/content/common/ico-website.svg" alt="" />
         </li>

@@ -1,7 +1,8 @@
-.header {
+header.header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
 
   background-color: aqua;
 
@@ -15,9 +16,42 @@
   border-bottom: 1px solid rgba(0, 0, 0, 0);
   transition: all 0.3s;
 
-  .main-menu {
+  nav.mainMenuWrap {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    height: 100%;
+    transform: translateX(-50%);
+
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    .depth0 {
+      position: relative;
+      height: 100%;
+      width: 100%;
+      .linkHeaderWhite {
+        display: flex;
+        align-items: center;
+        color: var(--color-white);
+        height: 100%;
+        width: 100%;
+        padding-left: 1em;
+        padding-right: 1em;
+        font-size: 22px;
+        text-transform: uppercase;
+        line-height: 1;
+        letter-spacing: 0.02em;
+        white-space: nowrap;
+        transition: color 0.4s;
+      }
+    }
+  }
+
+  ul.iconWrap {
+    display: flex;
+    align-items: center;
+    position: relative;
   }
 }
