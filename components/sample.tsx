@@ -19,9 +19,15 @@ export default function SampleComponent() {
       console.log(error);
     }
   };
+
+  const clickAdd = async () => {
+    await menuApi.setMenuList();
+  };
+
   return (
     <>
       <button onClick={getData}>click get</button>
+      <button onClick={clickAdd}>click add</button>
 
       <p>{data}</p>
     </>
