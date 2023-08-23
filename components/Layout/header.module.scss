@@ -1,4 +1,4 @@
-.mainHeader {
+.header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -14,4 +14,10 @@
   box-sizing: border-box;
   border-bottom: 1px solid rgba(0, 0, 0, 0);
   transition: all 0.3s;
+
+  .main-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
