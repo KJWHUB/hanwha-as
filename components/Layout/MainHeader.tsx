@@ -1,19 +1,15 @@
 import Link from 'next/link';
 import header from './header.module.scss';
 
-export default async function MainHeader() {
-  interface MainMenuType {
-    id: string;
-    text: string;
-    path: string;
-    down: Array<any>;
-  }
+import { MainMenuType } from '@/types/menu';
+import menuApi from '@/services/module/menu';
+import BurgerMenu from '../Menu/BurgerMenu';
 
-  const api = await fetch('http://localhost:9999/menuList');
-  const response = await api.json();
+export default async function MainHeader() {
+  const response = await menuApi.getMenuList();
 
   return (
-    <header className={header.mainHeader}>
+    <header className={`${header.header} menu__hamburger`}>
       <Link href="/">
         <img src="/images/content/common/d-logo.svg" alt="" />
       </Link>
@@ -28,7 +24,15 @@ export default async function MainHeader() {
       </nav>
 
       <ul className="icon-wrap">
-        <li></li>
+        <li>
+          <img src="/images/content/common/ico-website.svg" alt="" />
+        </li>
+        <li>
+          <Link href="/">방문 신청</Link>
+        </li>
+        <li>
+          <BurgerMenu />
+        </li>
       </ul>
     </header>
   );
