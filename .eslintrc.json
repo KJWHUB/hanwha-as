@@ -38,6 +38,7 @@
   },
   "rules": {
     "react/jsx-filename-extension": ["error", { "extensions": [".js", ".jsx", ".ts", ".tsx"] }],
+    "react/no-array-index-key": "off",
     "import/order": [
       "error",
       {
