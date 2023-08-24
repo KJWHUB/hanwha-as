@@ -14,9 +14,9 @@ export default async function MainHeader() {
         <img src="/images/content/common/d-logo.svg" alt="" />
       </Link>
       <nav className={header.mainMenuWrap}>
-        {response.map((el: MainMenuType) => (
-          <div className={`${header.depth0} btn3-en`}>
-            <Link href={el.path} key={el.id} className={header.linkHeaderWhite}>
+        {response.map((el: MainMenuType, idx: number) => (
+          <div className={`${header.depth0} btn3-en`} key={idx}>
+            <Link href={el.path} className={header.linkHeaderWhite}>
               {el.text}
             </Link>
           </div>
