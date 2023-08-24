@@ -1,9 +1,9 @@
 'use client';
 
-import { db } from '@/firebase/index';
-
-import { collection, addDoc } from 'firebase/firestore';
 import { useState } from 'react';
+import { collection, addDoc } from 'firebase/firestore';
+import { db } from '@/firebase';
+
 
 export default function Home() {
   const [value, setValue] = useState('');
@@ -21,7 +21,9 @@ export default function Home() {
 
       <form onSubmit={(event) => event.preventDefault()}>
         <input onChange={(event) => setValue(event.target.value)} />
-        <button onClick={onClickUpLoadButton}>전송</button>
+        <button type="button" onClick={onClickUpLoadButton}>
+          전송
+        </button>
       </form>
     </main>
   );

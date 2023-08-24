@@ -1,9 +1,9 @@
 import Link from 'next/link';
-import header from './header.module.scss';
 
-import { MainMenuType } from '@/types/menu';
-import menuApi from '@/services/module/menu';
-import BurgerMenu from '../Menu/BurgerMenu';
+import menuApi from '@/services/module/menu/index.ts';
+import { MainMenuType } from '@/types/menu/index.ts';
+import BurgerMenu from '../Menu/BurgerMenu.tsx';
+import header from './header.module.scss';
 
 export default async function MainHeader() {
   const response = await menuApi.getMenuList();
@@ -14,15 +14,13 @@ export default async function MainHeader() {
         <img src="/images/content/common/d-logo.svg" alt="" />
       </Link>
       <nav className={header.mainMenuWrap}>
-        {response.map((el: MainMenuType) => {
-          return (
-            <div className={`${header.depth0} btn3-en`}>
-              <Link href={el.path} key={el.id} className={header.linkHeaderWhite}>
-                {el.text}
-              </Link>
-            </div>
-          );
-        })}
+        {response.map((el: MainMenuType) => (
+          <div className={`${header.depth0} btn3-en`}>
+            <Link href={el.path} key={el.id} className={header.linkHeaderWhite}>
+              {el.text}
+            </Link>
+          </div>
+        ))}
       </nav>
 
       <ul className={header.iconWrap}>

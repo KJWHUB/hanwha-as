@@ -1,6 +1,7 @@
-import '/styles/globals.scss';
+import '@/styles/globals.scss';
 
-import MainHeader from '@/components/Layout/MainHeader';
+import React from 'react';
+import MainHeader from '@/components/Layout/MainHeader.tsx';
 
 export const metadata = {
   title: 'Create Next App',

@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 
-import menuApi from '@/services/module/menu/index';
+import menuApi from '@/services/module/menu/index.ts';
 
 export default function SampleComponent() {
   const [data, setData] = useState('');
@@ -26,8 +26,12 @@ export default function SampleComponent() {
 
   return (
     <>
-      <button onClick={getData}>click get</button>
-      <button onClick={clickAdd}>click add</button>
+      <button type="button" onClick={getData}>
+        click get
+      </button>
+      <button type="button" onClick={clickAdd}>
+        click add
+      </button>
 
       <p>{data}</p>
     </>
