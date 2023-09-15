@@ -4,9 +4,9 @@ header.header {
   align-items: center;
   position: relative;
 
-  background-color: aqua;
+  background-color: #1e1d1d;
 
-  width: 100%;
+  width: 100vw;
   padding-left: 5vw;
   padding-right: 5vw;
   padding-top: calc(1.3vw + 15px);
@@ -15,6 +15,11 @@ header.header {
   box-sizing: border-box;
   border-bottom: 1px solid rgba(0, 0, 0, 0);
   transition: all 0.3s;
+
+  .logoHome {
+    width: clamp(196px, 12.7vw, 272px);
+    height: clamp(32px, 2.5rem, 48px);
+  }
 
   nav.mainMenuWrap {
     position: absolute;
@@ -39,7 +44,7 @@ header.header {
         width: 100%;
         padding-left: 1em;
         padding-right: 1em;
-        font-size: 22px;
+        font-size: 18px;
         text-transform: uppercase;
         line-height: 1;
         letter-spacing: 0.02em;
@@ -51,7 +56,14 @@ header.header {
 
   ul.iconWrap {
     display: flex;
+    gap: 1.375em;
     align-items: center;
     position: relative;
+
+    li {
+      a {
+        color: white;
+      }
+    }
   }
 }
