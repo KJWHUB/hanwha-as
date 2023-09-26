@@ -40,5 +40,9 @@ node -v 18.16.1
 # Commit
 
 Feature: 기능 추가
+
 Fix: 오류 수정
-Set: 설정 수정
+
+Set: 설정 수정 
+
+ 

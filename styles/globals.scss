@@ -1,8 +1,9 @@
 @charset 'utf-8';
 
-@import '/public/fonts/custom-font.css';
 @import 'reset.module';
 @import 'base.module';
 @import 'animations.scss';
 @import 'mixins.scss';
 @import 'variable.scss';
+@import 'hamburgers.scss';
+@import 'custom-font.css';
