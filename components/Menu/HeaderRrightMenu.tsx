@@ -32,7 +32,7 @@ export default function HeaderRrightMenu() {
         <Image src="/images/content/common/ico-website.svg" width={25} height={25} alt="지구본" />
       </li>
       <li>
-        <Link href="/">방문 신청</Link>
+        <Link href="/">방문신청</Link>
       </li>
       <li>
         <BurgerMenu />
