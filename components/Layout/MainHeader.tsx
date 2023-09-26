@@ -1,8 +1,9 @@
+import Image from 'next/image';
 import Link from 'next/link';
 
+import HeaderRrightMenu from '@/components/Menu/HeaderRrightMenu.tsx';
 import menuApi from '@/services/module/menu/index.ts';
 import { MainMenuType } from '@/types/menu/index.ts';
-import BurgerMenu from '../Menu/BurgerMenu.tsx';
 import header from './header.module.scss';
 
 export default async function MainHeader() {
@@ -11,7 +12,7 @@ export default async function MainHeader() {
   return (
     <header className={header.header}>
       <Link href="/">
-        <img className={header.logoHome} src="/images/content/common/d-logo.svg" alt="" />
+        <Image className={header.logoHome} src="/images/content/common/d-logo.svg" width={272} height={48} alt="logo" />
       </Link>
 
       <nav className={header.mainMenuWrap}>
@@ -24,17 +25,7 @@ export default async function MainHeader() {
         ))}
       </nav>
 
-      <ul className={header.iconWrap}>
-        <li>
-          <img src="/images/content/common/ico-website.svg" alt="" />
-        </li>
-        <li>
-          <Link href="/">방문 신청</Link>
-        </li>
-        <li>
-          <BurgerMenu />
-        </li>
-      </ul>
+      <HeaderRrightMenu />
     </header>
   );
 }

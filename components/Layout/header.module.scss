@@ -44,25 +44,12 @@ header.header {
         width: 100%;
         padding-left: 1em;
         padding-right: 1em;
-        font-size: 18px;
+        font-size: 22px;
         text-transform: uppercase;
         line-height: 1;
         letter-spacing: 0.02em;
         white-space: nowrap;
         transition: color 0.4s;
-      }
-    }
-  }
-
-  ul.iconWrap {
-    display: flex;
-    gap: 1.375em;
-    align-items: center;
-    position: relative;
-
-    li {
-      a {
-        color: white;
       }
     }
   }
