@@ -1,4 +1,4 @@
 export enum Lang {
-  KOR,
-  ENG
+  KOR = 'KOR',
+  ENG = 'ENG'
 }

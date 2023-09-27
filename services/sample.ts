@@ -1,35 +1,31 @@
-import request from '@/services/config/axios';
+import request from '@/services/config/axios.ts';
 
-const getApi = (params: any) => {
-  return request({
+const getApi = (params: any) =>
+  request({
     url: '/get',
     method: 'GET',
     params
   });
-};
 
-const postApi = (data: any) => {
-  return request({
+const postApi = (data: any) =>
+  request({
     url: '/post',
     method: 'POST',
     data
   });
-};
 
-const putApi = (data: any) => {
-  return request({
+const putApi = (data: any) =>
+  request({
     url: '/put',
     method: 'PUT',
     data
   });
-};
 
-const deleteApi = (id: any) => {
-  return request({
+const deleteApi = (id: any) =>
+  request({
     url: `/delete/${id}`,
     method: 'DELETE'
   });
-};
 
 const sampleApi = {
   getApi,

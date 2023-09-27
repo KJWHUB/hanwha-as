@@ -8,9 +8,7 @@ const instance = axios.create({
 
 // response interceptor
 instance.interceptors.response.use(
-  (response) => {
-    return response.data;
-  },
+  (response) => response.data,
   (error) => {
     console.log(error);
   }

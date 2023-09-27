@@ -1,16 +1,14 @@
-import request from '@/services/config/axios';
-
 import { getDoc, doc, setDoc } from 'firebase/firestore';
 
-import { db } from '@/firebase';
+import db from '@/firebaseMySet';
+import request from '@/services/config/axios.ts';
 
-const getList = (params: any) => {
-  return request({
+const getList = (params: any) =>
+  request({
     url: '/menuList',
     method: 'GET',
     params
   });
-};
 
 // 메뉴 리스트 조회
 const getMenuList = async () => {
@@ -20,11 +18,10 @@ const getMenuList = async () => {
   if (docSnap.exists()) {
     console.log('Document data:', docSnap.data());
     return docSnap.data().list;
-  } else {
-    // docSnap.data() will be undefined in this case
-    console.log('No such document!');
-    return [];
   }
+  // docSnap.data() will be undefined in this case
+  console.log('No such document!');
+  return [];
 };
 
 const setMenuList = async () => {
