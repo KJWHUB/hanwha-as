@@ -12,7 +12,7 @@ export default async function MainHeader() {
   return (
     <header className={header.header}>
       <Link href="/">
-        <Image className={header.logoHome} src="/images/content/common/d-logo.svg" width={272} height={48} alt="logo" />
+        <Image src="/images/content/common/d-logo.svg" width={272} height={48} alt="logo" priority />
       </Link>
 
       <nav className={header.mainMenuWrap}>
