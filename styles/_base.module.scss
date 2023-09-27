@@ -33,6 +33,15 @@ html body {
   font-weight: normal;
 }
 
+// container
+.inner {
+  display: block;
+  position: relative;
+  width: 100%;
+  padding-left: 5vw;
+  padding-right: 5vw;
+}
+
 // btn
 .btn3-en {
   font-size: 18px;

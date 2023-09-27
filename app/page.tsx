@@ -1,8 +1,10 @@
+import MainVideo from '@/components/MainHome/MainVideo.tsx';
+
 export default function Home() {
   return (
     <main>
-      {/* vidio */}
-      비디오
+      {/* video */}
+      <MainVideo />
       {/* step1 */}
       {/* step2 */}
       {/* step3 */}
