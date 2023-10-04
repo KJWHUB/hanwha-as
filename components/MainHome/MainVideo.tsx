@@ -8,11 +8,12 @@ export default function MainVideo() {
         <source src="https://www.hanwhaaerospace.co.kr/files/videoView.do?id=809f32fe-f086-403c-a79d-01a70dd6808d" />
       </video>
       {/* bottom Menu */}
-      <div className="bottom">
+      <div className={`inner ${style.bottom}`}>
         <div className="row">
           <h3>The innovating pioneer for a sustainable tomorrow</h3>
           <div>arrow</div>
         </div>
+
         <div className="bar">prograss bar</div>
       </div>
     </section>

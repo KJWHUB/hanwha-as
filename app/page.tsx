@@ -4,6 +4,7 @@ import { useRef } from 'react';
 // eslint-disable-next-line import/no-extraneous-dependencies
 import { LocomotiveScrollProvider } from 'react-locomotive-scroll';
 import MainVideo from '@/components/MainHome/MainVideo.tsx';
+import Step1 from '@/components/MainHome/Step1.tsx';
 
 export default function Home() {
   const containerRef = useRef(null);
@@ -28,6 +29,7 @@ export default function Home() {
         {/* video */}
         <MainVideo />
         {/* step1 */}
+        <Step1 />
         {/* step2 */}
         {/* step3 */}
         {/* step4 */}

@@ -2,16 +2,18 @@ header.header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: relative;
+  position: fixed;
   width: 100%;
   height: calc(40px + (calc(1.3vw + 15px) * 2) + 1px);
   padding-left: 5vw;
   padding-right: 5vw;
   padding-top: calc(1.3vw + 15px);
   padding-bottom: calc(1.3vw + 15px);
-  background-color: #1e1d1d;
+
   border-bottom: 1px solid rgba(0, 0, 0, 0);
   transition: all 0.3s;
+
+  z-index: 9;
 
   .logoHome {
     width: clamp(196px, 12.7vw, 272px);

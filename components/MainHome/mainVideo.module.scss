@@ -1,5 +1,25 @@
 .mainVideo {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
   video {
     width: 100%;
+  }
+}
+
+.bottom {
+  bottom: 0;
+  position: absolute !important;
+  padding-bottom: 58px;
+
+  color: white;
+  z-index: 9;
+
+  h3 {
+    font-size: max(36px, 3.5417vw);
+    font-weight: 400;
+    line-height: 1.1;
+    letter-spacing: -0.03em;
+    font-family: 'canada-type-gibson', sans-serif;
   }
 }
