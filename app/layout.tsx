@@ -10,7 +10,7 @@ export const metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="ko">
+    <html lang="ko" data-scroll-container className="has-scroll-init has-scroll-smooth has-scroll-dragging">
       <body>
         <MainHeader />
         {children}
