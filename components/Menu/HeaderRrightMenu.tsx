@@ -1,8 +1,8 @@
 'use client';
 
 import { useState } from 'react';
-import Image from 'next/image';
 import Link from 'next/link';
+import WebsiteIcon from '@/components/Icon/WebsiteIcon.tsx';
 import BurgerMenu from './BurgerMenu.tsx';
 
 import style from './headerRrightMenu.module.scss';
@@ -28,8 +28,8 @@ export default function HeaderRrightMenu() {
       onFocus={handleMouseOverUl}
       onBlur={handleMouseOverUl}
     >
-      <li className="mouse-point">
-        <Image src="/images/content/common/ico-website.svg" width={25} height={25} alt="지구본" />
+      <li>
+        <WebsiteIcon />
       </li>
       <li>
         <Link href="/">방문신청</Link>

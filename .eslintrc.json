@@ -42,16 +42,7 @@
     "import/order": [
       "error",
       {
-        "groups": [
-          "type",
-          "builtin",
-          "external",
-          "internal",
-          "parent",
-          "sibling",
-          "index",
-          "unknown"
-        ],
+        "groups": ["type", "builtin", "external", "internal", "parent", "sibling", "index", "unknown"],
         "pathGroups": [
           {
             "pattern": "react*",
