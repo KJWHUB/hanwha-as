@@ -31,6 +31,8 @@ header.header {
     justify-content: space-between;
     align-items: center;
 
+    transition: all 0.3s;
+
     .depth0 {
       position: relative;
       height: 100%;
@@ -54,6 +56,8 @@ header.header {
   }
 }
 
-header.active {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+.active {
+  backdrop-filter: blur(30px);
+  background-color: rgba(0, 0, 0, 0.7);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
 }
