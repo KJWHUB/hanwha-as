@@ -2,12 +2,24 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 import HeaderRrightMenu from '@/components/Menu/HeaderRrightMenu.tsx';
-import menuApi from '@/services/module/menu/index.ts';
 import { MainMenuType } from '@/types/menu/index.ts';
 import header from './header.module.scss';
 
-export default async function MainHeader() {
-  const response = await menuApi.getMenuList();
+export default function MainHeader() {
+  const response = [
+    { text: 'Who We Are', id: 'MENU-001', path: '/whoweare', down: [] },
+    {
+      path: '/whyweexist',
+      text: 'Why We Exist',
+      id: 'MENU-002',
+      down: []
+    },
+    { down: [], path: '/whatwedo', text: 'What We Do', id: 'MENU-003' },
+    { path: '/ir', text: 'IR', id: 'MENU-004', down: [] },
+    { text: 'media', id: 'MENU-005', down: [], path: '/media' },
+    { text: 'esg', id: 'MENU-006', path: '/esg', down: [] },
+    { down: [], id: 'MENU-007', path: '/careers', text: 'careers' }
+  ];
 
   return (
     <header className={header.header}>

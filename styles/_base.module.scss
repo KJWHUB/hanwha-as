@@ -68,6 +68,12 @@ html body {
   font-weight: normal;
 }
 
+button {
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
 // container
 .inner {
   display: block;
@@ -112,4 +118,14 @@ html body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+// translation list
+.translation-list-wrap {
+  &.close {
+    ul {
+      height: 0;
+      padding: 0;
+    }
+  }
 }
