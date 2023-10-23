@@ -8,14 +8,7 @@
     "ecmaVersion": "latest",
     "sourceType": "module"
   },
-  "extends": [
-    "airbnb",
-    "airbnb/hooks",
-    "plugin:react/recommended",
-    "plugin:jsx-a11y/recommended",
-    "eslint-config-prettier",
-    "next/core-web-vitals"
-  ],
+  "extends": ["airbnb", "airbnb/hooks", "plugin:react/recommended", "eslint-config-prettier", "next/core-web-vitals"],
   "globals": {
     "NodeJS": true
   },
