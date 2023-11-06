@@ -1,6 +1,12 @@
 {
   "semi": true,
-  "singleQuote": false,
+  "useTabs": false,
   "tabWidth": 2,
-  "trailingComma": "none"
+  "trailingComma": "none",
+  "singleQuote": true,
+  "printWidth": 120,
+  "proseWrap": "never",
+  "htmlWhitespaceSensitivity": "css",
+  "jsxSingleQuote": false,
+  "endOfLine": "lf"
 }

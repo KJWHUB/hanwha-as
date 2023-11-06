@@ -1,0 +1,38 @@
+.iconWrap {
+  position: relative;
+
+  ul {
+    position: absolute;
+    top: calc(100% + 13px);
+    padding: 6px 0;
+    border-radius: 6px;
+    min-width: 100%;
+    height: var(--height, 100px);
+    background-color: rgba(255, 255, 255, 0.85);
+    -webkit-backdrop-filter: blur(30px);
+    backdrop-filter: blur(30px);
+    box-shadow: 0 0 0 1px #ddd inset;
+    overflow: hidden;
+    left: 50%;
+    transform: translate(-50%, 0);
+    transition:
+      height 0.3s,
+      padding 0.3s;
+    transform-origin: top;
+    text-align: center;
+
+    li {
+      button {
+        width: calc(100% - 2px);
+        margin: 0 auto;
+        padding: 0.75em 1em;
+        border: 0;
+        background-color: rgba(0, 0, 0, 0);
+        font-size: inherit;
+        transition: background-color 0.2s;
+        white-space: nowrap;
+        cursor: pointer;
+      }
+    }
+  }
+}
