@@ -8,7 +8,7 @@
     "ecmaVersion": "latest",
     "sourceType": "module"
   },
-  "extends": ["plugin:react/recommended", "eslint-config-prettier"],
+  "extends": ["next/core-web-vitals", "plugin:react/recommended", "eslint-config-prettier"],
   "globals": {
     "NodeJS": true
   },
@@ -32,6 +32,7 @@
   "rules": {
     "react/jsx-filename-extension": ["error", { "extensions": [".js", ".jsx", ".ts", ".tsx"] }],
     "react/no-array-index-key": "off",
+    "react/react-in-jsx-scope": "off",
     "import/order": [
       "error",
       {
